@@ -6,8 +6,8 @@ Promise.all([
   NarLoader.loadFromURI("./nar/mobilemaster.nar"),
   NarLoader.loadFromURI("./nar/origin.nar")
 ]).then(function(arg){
-  var shellNanikaDir = arg[0].readFileSync();
-  var balloonNanikaDir = arg[1].readFileSync();
+  var shellNanikaDir = arg[0]
+  var balloonNanikaDir = arg[1]
   console.log(arg)
   var shellDir = shellNanikaDir.getDirectory("shell/master").asArrayBuffer();
   var balloonDir = balloonNanikaDir.asArrayBuffer();
