@@ -1,0 +1,22 @@
+{
+  "name": "ikagaka-electron",
+  "description": "Ikagaka (如何か) on Electron",
+  "main": "main.js",
+  "authors": [
+    "utgwkk"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "ikagaka",
+    "electron"
+  ],
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
