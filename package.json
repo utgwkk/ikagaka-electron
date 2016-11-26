@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/utgwkk/ikagaka-electron/issues"
   },
-  "homepage": "https://github.com/utgwkk/ikagaka-electron#readme"
+  "homepage": "https://github.com/utgwkk/ikagaka-electron#readme",
+  "devDependencies": {
+    "electron": "^1.4.8"
+  }
 }
