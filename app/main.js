@@ -3,8 +3,8 @@
 const NarLoader = require('narloader').NarLoader
 
 Promise.all([
-  NarLoader.loadFromURI("./nar/mobilemaster.nar"),
-  NarLoader.loadFromURI("./nar/origin.nar")
+  NarLoader.loadFromURL("./nar/mobilemaster.nar"),
+  NarLoader.loadFromURL("./nar/origin.nar")
 ]).then(function(arg){
   var shellNanikaDir = arg[0]
   var balloonNanikaDir = arg[1]
