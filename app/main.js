@@ -1,6 +1,12 @@
 'use strict'
 
+const BrowserWindow = require('electron').remote.getCurrentWindow()
 const NarLoader = require('narloader').NarLoader
+
+document.addEventListener('click', (evt) => {
+  console.log(evt)
+  BrowserWindow.blur()
+}, false)
 
 Promise.all([
   NarLoader.loadFromURL("./nar/mobilemaster.nar"),
@@ -23,6 +29,9 @@ Promise.all([
 
   const nmdmgr = new cuttlebone.NamedManager()
   document.body.appendChild(nmdmgr.element);
+  document.getElementsByClassName("namedMgr")[0].addEventListener('click', (evt) => {
+    evt.stopPropagation()
+  })
 
   const hwnd = nmdmgr.materialize(shell, balloon);
   const named = nmdmgr.named(hwnd);

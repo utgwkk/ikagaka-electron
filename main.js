@@ -23,11 +23,9 @@ const createWindow = () => {
       height: size.height,
       show: true,
       frame: false,
-      transparent: true,
-      alwaysOnTop: true
+      transparent: true
     })
     mainWindow.maximize()
-    mainWindow.setIgnoreMouseEvents(true)
   }
 
   mainWindow.loadURL(url.format({
