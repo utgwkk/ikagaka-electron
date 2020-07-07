@@ -22,7 +22,7 @@
   },
   "homepage": "https://github.com/utgwkk/ikagaka-electron#readme",
   "devDependencies": {
-    "electron": "^1.4.8",
+    "electron": "^9.1.0",
     "narloader": "github:ikagaka/NarLoader#jszip3"
   }
 }
